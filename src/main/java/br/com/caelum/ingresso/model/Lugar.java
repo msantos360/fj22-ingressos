@@ -57,6 +57,8 @@ public class Lugar {
     public void setPosicao(Integer posicao) {
         this.posicao = posicao;
     }
+    
+    
 
     @Override
     public int hashCode() {

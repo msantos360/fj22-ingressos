@@ -61,7 +61,11 @@ public class Filme {
         this.nome = nome;
     }
 
-    public Duration getDuracao() {
+    public void setDuracao(Duration duracao) {
+		this.duracao = duracao;
+	}
+
+	public Duration getDuracao() {
         return duracao;
     }
 

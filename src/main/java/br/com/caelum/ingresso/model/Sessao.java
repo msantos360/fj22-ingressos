@@ -22,12 +22,17 @@ public class Sessao {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
+	
 	private LocalTime horario;
+	
 	@ManyToOne
 	private Sala sala;
+	
 	@ManyToOne
 	private Filme filme;
+	
 	private BigDecimal preco;
+	
 	@OneToMany(mappedBy = "sessao", fetch = FetchType.EAGER)
 	private Set<Ingresso> ingressos = new HashSet<>();
 
@@ -92,6 +97,18 @@ public class Sessao {
 
 	public void setIngresso(Set<Ingresso> ingresso) {
 		this.ingressos = ingresso;
+	}
+
+	public Set<Ingresso> getIngressos() {
+		return ingressos;
+	}
+
+	public void setIngressos(Set<Ingresso> ingressos) {
+		this.ingressos = ingressos;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 }

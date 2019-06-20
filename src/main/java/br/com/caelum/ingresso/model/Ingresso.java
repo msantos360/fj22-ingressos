@@ -70,6 +70,14 @@ public class Ingresso {
 	public void setTipoDeIngresso(TipoDeIngresso tipoDeIngresso) {
 		this.tipoDeIngresso = tipoDeIngresso;
 	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
 	
 	
 }
